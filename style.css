@@ -1,0 +1,158 @@
+/* ====== RESET BÁSICO ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e90ff;
+}
+
+/* ====== LAYOUT GERAL ====== */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+/* ====== LAYOUT DAS SEÇÕES ESPECÍFICAS ====== */
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre-container img {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+}
+
+/* --- Seção PROJETOS --- */
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projeto-card {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(red, green, blue, alpha);
+}
+
+.projeto-card h3 {
+    color:#1e90ff;
+    margin-bottom: 15px;
+}
+
+.projeto-links {
+    margin-top: 20px;
+}
+
+.projeto-links a {
+    text-decoration: none;
+    color:#fff;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.projeto-links a:hover {
+    background-color: #1e90ff;
+}
+
+/* --- Seção CONTATO --- */
+#contato {
+    text-align: center;
+}
+
+.contato-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contato-links a:hover {
+    background-color: #1e90ff;
+    transform: scale(1.05);
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
