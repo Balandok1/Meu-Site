@@ -70,7 +70,7 @@ section h2 {
     max-width: 250px;
     border-radius: 50%;
     border: 5px solid #fff;
-    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Seção PROJETOS --- */
@@ -88,13 +88,13 @@ section h2 {
     border: 1px solid #ddd;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projeto-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(red, green, blue, alpha);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projeto-card h3 {
